@@ -1,0 +1,162 @@
+/*font Variables*/
+/*Color Variables*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,700,900');
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #000000;
+  font-size: 24px;
+}
+.multi_step_form #msform {
+  position: relative;
+  margin: 0 auto;
+  background: #ffffff;
+  z-index: 1;
+}
+.multi_step_form #msform #progressbar {
+  text-align: center;
+  margin: 10px 30px 10px 0px;
+  overflow: hidden;
+}
+.multi_step_form #msform #progressbar li {
+  list-style-type: none;
+  color: white;
+  font-size: 9px;
+  width: calc(100% / 3);
+  float: left;
+  position: relative;
+  font: 500 13px/1 'Roboto', sans-serif;
+}
+
+.multi_step_form #msform #progressbar li:nth-child(2):before {
+  background-color: rgb(204, 204, 16);
+  content: '2';
+}
+.multi_step_form #msform #progressbar li:nth-child(3):before {
+  background-color: rgb(204, 204, 16);
+  content: '3';
+}
+.multi_step_form #msform #progressbar li:nth-child(4):before {
+  background-color: rgb(204, 204, 16);
+  content: '4';
+}
+.multi_step_form #msform #progressbar li:nth-child(5):before {
+  background-color: rgb(204, 204, 16);
+  content: '5';
+}
+.multi_step_form #msform #progressbar li:before {
+  content: '1';
+  font: normal normal normal 30px/50px Ionicons;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  background-color: rgb(204, 204, 16);
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+}
+.multi_step_form #msform #progressbar li:first-child:after {
+  width: 0%;
+}
+
+.multi_step_form #msform #progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 5px;
+  background: #eaf0f4;
+  position: absolute;
+  left: -50%;
+  top: 21px;
+  z-index: -1;
+}
+.multi_step_form #msform #progressbar li:last-child:after {
+  width: 100%;
+}
+.multi_step_form #msform #progressbar li.active {
+  color: #4ea64e;
+}
+.multi_step_form #msform #progressbar li.active::before {
+  font-family: FontAwesome;
+  content: '\f00c';
+}
+.multi_step_form #msform #progressbar li.active:before,
+.multi_step_form #msform #progressbar li.active:after {
+  background: #19614b;
+
+  color: white;
+}
+.img-fluid1 {
+  position: relative;
+  left: 190px;
+}
+.img-fluid {
+  position: relative;
+  left: 70px;
+}
+
+.mx-auto h5 {
+  font-size: 32px;
+}
+
+/*foother*/
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+  background-color: #c4c4c4;
+  padding: 0px 40px 0px 40px;
+}
+.footer-col {
+  width: 30%;
+  padding: 0px 0 0 0px;
+}
+.footer-col h4 {
+  font-size: 54px;
+  color: #000000;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h9 {
+  font-size: 25px;
+  color: #000000;
+}
+.footer-col h10 {
+  font-size: 25spx;
+  color: #666666;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin: 0 0px 0px 0px;
+  text-align: center;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #858585;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+#copyright {
+  text-align: center;
+  left: auto;
+  width: 100%;
+  padding: 0px 00px 00px 00px;
+  margin-bottom: 0px;
+}
